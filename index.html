@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./cssFile/style.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <title>Web Jukebox</title>
+</head>
+<body>
+    
+    <div class="box">
+        <div class="langOption">
+            <h2>Options</h2>
+            <ul>
+                <li><button onclick="english()" id="english" onmousedown="bleep.play()">English</button></li>
+                <li><button onclick="hindi()" id="hindi" onmousedown="bleep.play()">Hindi</button></li>
+                <li><button onclick="other()" id="other" onmousedown="bleep.play()">Anime</button></li>
+            </ul>
+        </div>
+        <div class="playPause">
+            <button id="playPause"><i class="fas fa-play" id="play" onclick="plaY()"></i><i class="fas fa-pause" id="pause" onclick="pausE()"></i></button>
+            <h3>Current time: <span id="currTime"></span></h3>
+            <h3>Total time: <span id="totTime"></span></h3>
+            <div class="change">
+                <button onclick="changE()" id="changE"><i class="fas fa-exchange-alt"></i></button>
+                <button onclick="repeaT()"><i class="fas fa-redo-alt"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="followMe">
+        <p>Follow Me</p>
+        <div class="social">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
